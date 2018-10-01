@@ -1,0 +1,27 @@
+---
+- name: Creates nvim directories
+  file: 
+        path: "{{ item }}"
+        state: directory
+  with_items:
+        - ~/.config/nvim
+        - ~/.config/nvim/autoload
+        - ~/.config/nvim/bundle
+
+- name: Install package manager
+  get_url:
+        url: https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim  
+        dest: ~/.config/nvim/autoload/pathogen.vim
+
+- name: Install plugins
+  git:
+        repo: "{{ item }}"
+        dest: ~/.config/nvim/bundle/
+  with_items:
+        - https://github.com/ctrlpvim/ctrlp.vim.git
+        - https://github.com/scrooloose/nerdtree.git
+
+- name: Copies configuration file
+  template: 
+        src: init.vim.j2
+        dest: /home/esteban/.config/nvim/init.vim

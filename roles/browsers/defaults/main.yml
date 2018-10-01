@@ -1,0 +1,12 @@
+---
+keys:
+    - https://dl-ssl.google.com/linux/linux_signing_key.pub
+    - https://s3-us-west-2.amazonaws.com/brave-apt/keys.asc
+
+repositories:
+    - { repo: "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main", filename: google-chrome }
+    - { repo: "deb [arch=amd64] https://s3-us-west-2.amazonaws.com/brave-apt xenial main", filename: brave }
+
+packages:
+    - google-chrome-stable
+    - brave

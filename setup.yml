@@ -1,0 +1,4 @@
+---
+- import_playbook: playbooks/dependencies.yml
+- import_playbook: playbooks/neovim.yml
+- import_playbook: playbooks/browsers.yml

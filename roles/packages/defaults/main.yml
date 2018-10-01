@@ -1,0 +1,6 @@
+---
+common_packages:
+    - git
+    - neovim
+    - tmux 
+    - zsh
