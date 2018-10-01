@@ -7,6 +7,8 @@
         - ~/.config/nvim
         - ~/.config/nvim/autoload
         - ~/.config/nvim/bundle
+        - ~/.config/nvim/bundle/ctrlp
+        - ~/.config/nvim/bundle/nerdtree
 
 - name: Install package manager
   get_url:
@@ -15,11 +17,10 @@
 
 - name: Install plugins
   git:
-        repo: "{{ item }}"
-        dest: ~/.config/nvim/bundle/
+        repo: "{{ item.repo }}"
+        dest: "{{ item.dest }}"
   with_items:
-        - https://github.com/ctrlpvim/ctrlp.vim.git
-        - https://github.com/scrooloose/nerdtree.git
+    - "{{ plugins }}"
 
 - name: Copies configuration file
   template: 
