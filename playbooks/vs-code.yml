@@ -1,0 +1,5 @@
+---
+- hosts: all
+  roles:
+    - gantsign.visual-studio-code
+

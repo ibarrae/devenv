@@ -8,7 +8,13 @@ Install [ansible](https://docs.ansible.com/ansible/latest/installation_guide/int
 
 ## Getting Started
 
-Run the main playbook:
+ - Install external roles with `ansible-galaxy`
+
+```sh
+ansible-galaxy install -r external-roles.yml
+```
+
+ - Run the main playbook:
 
 ```sh
 ansible-playbook setup.yml
