@@ -4,3 +4,5 @@ common_packages:
     - neovim
     - tmux 
     - zsh
+    - openjdk-8-jre
+    - openjdk-8-jdk
