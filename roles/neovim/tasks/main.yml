@@ -9,6 +9,7 @@
         - ~/.config/nvim/bundle
         - ~/.config/nvim/bundle/ctrlp
         - ~/.config/nvim/bundle/nerdtree
+        - ~/.config/nvim/bundle/nerdtree-git-plugin
 
 - name: Install package manager
   get_url:

@@ -1,4 +1,5 @@
 plugins:
   - {repo: "https://github.com/ctrlpvim/ctrlp.vim.git", dest: ~/.config/nvim/bundle/ctrlp }
   - {repo: "https://github.com/scrooloose/nerdtree.git", dest:  ~/.config/nvim/bundle/nerdtree }
+  - {repo: "https://github.com/Xuyuanp/nerdtree-git-plugin.git", dest: ~/.config/nvim/bundle/nerdtree-git-plugin }
 
