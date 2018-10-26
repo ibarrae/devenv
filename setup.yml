@@ -4,3 +4,4 @@
 - import_playbook: playbooks/browsers.yml
 - import_playbook: playbooks/vs-code.yml
 - import_playbook: playbooks/android-studio.yml
+- import_playbook: playbooks/stack.yml
