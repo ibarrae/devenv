@@ -1,3 +1,8 @@
 ---
+- name: Check if stack is already installed
+  command: stack --version
+  register: result
+
 - name: Download and install stack
   shell: wget -qO- https://get.haskellstack.org/ | sh
+  when: result is failed
