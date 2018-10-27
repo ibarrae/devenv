@@ -1,5 +1,13 @@
 ---
 - hosts: all
   roles:
-    - gantsign.visual-studio-code
-
+    - role: gantsign.visual-studio-code
+      users:
+        - username: esteban
+          visual_studio_code_extensions:
+            - riccardonovaglia.missinglineendoffile
+            - dbaeumer.vscode-eslint
+            - bernardodsanderson.theme-material-neutral
+            - shardulm94.trailing-spaces
+            - eg2.tslint
+            - emmanuelbeziat.vscode-great-icons
