@@ -6,3 +6,4 @@ common_packages:
     - zsh
     - openjdk-8-jre
     - openjdk-8-jdk
+    - qemu-kvm

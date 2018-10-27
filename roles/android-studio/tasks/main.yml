@@ -1,3 +1,6 @@
 ---
  - name: Install android studio with snap
    command: snap install android-studio --classic
+
+ - name: Asign user to kvm group
+   shell: adduser "{{ user }}" kvm
