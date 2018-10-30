@@ -1,6 +1,6 @@
 ---
 - name: Creates nvim directories
-  file: 
+  file:
         path: "{{ item }}"
         state: directory
   with_items:
@@ -13,7 +13,7 @@
 
 - name: Install package manager
   get_url:
-        url: https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim  
+        url: https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
         dest: ~/.config/nvim/autoload/pathogen.vim
 
 - name: Install plugins
@@ -24,6 +24,6 @@
     - "{{ plugins }}"
 
 - name: Copies configuration file
-  template: 
+  template:
         src: init.vim.j2
-        dest: /home/esteban/.config/nvim/init.vim
+        dest: /home/{{ user }}/.config/nvim/init.vim
