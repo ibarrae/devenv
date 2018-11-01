@@ -7,3 +7,6 @@ common_packages:
     - openjdk-8-jre
     - openjdk-8-jdk
     - qemu-kvm
+    - postgresql
+    - postgresql-contrib
+    - python-psycopg2
