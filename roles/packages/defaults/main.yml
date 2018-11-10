@@ -10,3 +10,5 @@ common_packages:
     - postgresql
     - postgresql-contrib
     - python-psycopg2
+    - gparted
+    - preload
